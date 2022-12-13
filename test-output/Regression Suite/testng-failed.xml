@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nopcommerce.demo.testsuite.ComputerPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inIt"/>
+          <include name="verifyProductAddedToShoppingCartSuccessfully"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.nopcommerce.demo.testsuite.ComputerPageTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
